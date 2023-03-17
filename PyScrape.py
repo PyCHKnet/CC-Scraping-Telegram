@@ -20,7 +20,7 @@ with open('.env', 'w') as f:
     f.write(f"SESSION_NAME={session_name}\n")
 
 # Ask the user if they want to update the credentials
-update_credentials = input("Do you want to update the credentials? (y/n): ")
+update_credentials = input("change(y) | keep(n) >> (y/n): ")
 
 if update_credentials.lower() == 'y':
     api_id = input("Enter API ID: ")
