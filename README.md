@@ -25,12 +25,10 @@ python3 PyScrape.py
 ## Usage
 
 1. Enter the group ID
-2. The script will scrape all new messages in the group and save the CCs
-3. The CCs will be saved in the `card_info.txt` file
-
-## Contributing
-
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+2. Enter API and Hash
+3. Enter login Credentials 
+4. The script will scrape all new messages in the group and save the CCs
+5. The CCs will be saved in the `card_info.txt` file
 
 ## Output
 
