@@ -34,4 +34,4 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 ## Output
 
-[Output](Screenshot 2023-03-17 201251.png)
+<img src="Screenshot 2023-03-17 201251.png" width="512"/>
