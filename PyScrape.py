@@ -6,6 +6,38 @@ from telethon import TelegramClient, events
 
 load_dotenv()
 
+# Get API credentials and other parameters from the user
+api_id = input("Enter API ID: ")
+api_hash = input("Enter API hash: ")
+group_id = input("Enter group ID: ")
+session_name = input("Enter session name: ")
+
+# Save the credentials and parameters in a .env file
+with open('.env', 'w') as f:
+    f.write(f"API_ID={api_id}\n")
+    f.write(f"API_HASH={api_hash}\n")
+    f.write(f"GROUP_ID={group_id}\n")
+    f.write(f"SESSION_NAME={session_name}\n")
+
+# Ask the user if they want to update the credentials
+update_credentials = input("Do you want to update the credentials? (y/n): ")
+
+if update_credentials.lower() == 'y':
+    api_id = input("Enter API ID: ")
+    api_hash = input("Enter API hash: ")
+    group_id = input("Enter group ID: ")
+    session_name = input("Enter session name: ")
+
+    # Save the updated credentials and parameters in the .env file
+    with open('.env', 'w') as f:
+        f.write(f"API_ID={api_id}\n")
+        f.write(f"API_HASH={api_hash}\n")
+        f.write(f"GROUP_ID={group_id}\n")
+        f.write(f"SESSION_NAME={session_name}\n")
+
+# Load the API credentials and other parameters from the .env file
+load_dotenv()
+
 api_id = int(os.getenv('API_ID'))
 api_hash = os.getenv('API_HASH')
 group_id = int(os.getenv('GROUP_ID'))
@@ -43,3 +75,4 @@ async def main():
 
 if __name__ == '__main__':
     asyncio.run(main())
+
