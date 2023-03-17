@@ -1,6 +1,6 @@
 
 ## Installation
-
+**Clone the repo**
 ```
 git clone https://github.com/PyCHKnet/CC-Scraping-Telegram.git
 ```
