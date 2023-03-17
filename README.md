@@ -34,4 +34,4 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 ## Output
 
-<img src="https://imgur.com/bZkNbLW" width="128"/>
+<img src="PyCHKnet/CC-Scraping-Telegram/Screenshot 2023-03-17 201251.png" width="128"/>
