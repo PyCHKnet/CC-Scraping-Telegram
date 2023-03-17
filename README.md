@@ -34,4 +34,4 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 ## Output
 
-[IMG_FILE](https://imgur.com/bZkNbLW)
+![IMG_FILE](https://imgur.com/bZkNbLW)
