@@ -1,6 +1,10 @@
 
 ## Installation
 
+```
+git clone https://github.com/PyCHKnet/CC-Scraping-Telegram.git
+```
+
 To get started with CC-Scraping-Telegram, you must have Python 3 with pip installed.
 
 1. Install the required modules:
