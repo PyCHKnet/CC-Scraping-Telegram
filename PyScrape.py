@@ -1,14 +1,17 @@
+import os
 import re
 import asyncio
+from dotenv import load_dotenv
 from telethon import TelegramClient, events
 
-api_id = 27197543 # enter your telegram api_id 
-api_hash = '8f530b22c5b15b480839087f26bdb4d3' # enter your telegram_id hash
-session_name = 'my_session' #anything here you would like
+load_dotenv()
+
+api_id = int(os.getenv('API_ID'))
+api_hash = os.getenv('API_HASH')
+group_id = int(os.getenv('GROUP_ID'))
+session_name = os.getenv('SESSION_NAME')
 
 client = TelegramClient(session_name, api_id, api_hash)
-
-group_id = 123456 #group id where you want to scrape ccs from
 
 async def extract_card_info(message):
     text = message.message
@@ -25,7 +28,7 @@ async def extract_card_info(message):
             if cvv_match:
                 cvv = cvv_match.group()
                 formatted_message = f"{card_number}|{month}|{year}|{cvv}"
-                with open('card_info.txt', 'a') as f:
+                with open('card_info/card_info.txt', 'a') as f:
                     f.write(formatted_message + '\n')
                 print(f'Card info extracted: {formatted_message}')
 
@@ -38,5 +41,5 @@ async def main():
     await client.start()
     await client.run_until_disconnected()
 
-asyncio.run(main())
-
+if __name__ == '__main__':
+    asyncio.run(main())
