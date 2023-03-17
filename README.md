@@ -6,7 +6,7 @@ To get started with CC-Scraping-Telegram, you must have Python 3 with pip instal
 1. Install the required modules:
 
 ```
-pip install telethon
+pip install telethon python-dotenv
 ```
 
 2. Create a Telegram account and get API and Hash from [Telegram Api](https://my.telegram.com/auth)
