@@ -7,7 +7,7 @@ from telethon import TelegramClient, events
 load_dotenv()
 
 if os.path.exists('.env'):
-    update = input("Do you want to update your API credentials? (y/n) ")
+    update = input("The .env file already exists, Do you want to update your API credentials? (y/n) ")
     if update.lower() == 'y':
         api_id = input("Enter your API ID: ")
         api_hash = input("Enter your API hash: ")
