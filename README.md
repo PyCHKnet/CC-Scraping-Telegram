@@ -14,7 +14,7 @@ pip install telethon
 3. Clone the repository if not cloned.
 
 ```
-cd card_info
+cd CC-Scraping-Telegram
 ```
 4. Run the script
 
